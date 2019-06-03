@@ -38,7 +38,7 @@ class ViewController: UIViewController, NetworkManagerDelegate, UITableViewDeleg
     
     func dataReceived(data: Any?, error: NSError?) {
         if error != nil {
-            print("Error: \(error)")
+            print("Error: \(String(describing: error))")
         }
         
         guard let data = data else {
